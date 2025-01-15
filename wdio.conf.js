@@ -8,7 +8,7 @@ exports.config = {
     ],
     maxInstances: 10,
     capabilities: [{
-        browserName: 'vscode',
+        browserName: 'chrome',
         browserVersion: 'stable', // also possible: "insiders" or a specific version e.g. "1.80.0"
         'wdio:vscodeOptions': {
             // points to directory where extension package.json is located

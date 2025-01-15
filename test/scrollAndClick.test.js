@@ -7,6 +7,18 @@ Given('I open the homepage', async () => {
 When('I click on the metro link', async () => {
     const link = await $('a[href="https://www.metro-bi-wb-ids-s01.cf.metro.cloud/#/home"]');
     await link.click();
+
+     // Wait for the popup to appear
+     const usernameField = await $('input[name=""]'); // Adjust selector to match the actual username field
+     const passwordField = await $('input[name=""]'); // Adjust selector to match the actual password field
+     const submitButton = await $('button[type="submit"]'); // Adjust selector for the login button
+ 
+     // Fill in credentials
+     await usernameField.setValue('');
+     await passwordField.setValue('"');
+ 
+     // Submit the form
+     await submitButton.click();
 });
 
 Then('I should see the homepage page', async () => {
