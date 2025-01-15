@@ -16,3 +16,6 @@ Thumbs.db
 # Optional: Ignore build directories (if applicable)
 dist/
 build/
+
+# Ignore downloaded VS Code directory
+.wdio-vscode-service/
